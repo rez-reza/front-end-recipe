@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Landing Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="My Food and Sons.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="recipe.js"></script>
+	</head>
+	
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+					<div class="navbar-header">
+						<a id="logo" class="navbar-brand ms-auto" href="index.html">
+							<img src="images/logo8.2.png" alt="Logo" class="img-fluid"/>
+						</a>
+						<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse justify-content-end" id="menu">
+						<ul class="navbar-nav mb-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">
+									<strong>Home</strong>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#about"><strong>About</strong></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#arrival-sec"><Strong>Recipes</strong></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<strong>Policy</strong>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="policy.html"><strong>Privacy Policy</strong></a></li>
+									<li><a class="dropdown-item" href="tnc.html"><strong>Terms and Conditions</strong></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html"><strong>Contact</strong></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<section>
+			<div id="home">
+				<img src="images/redirectBanner.png" class="d-block w-100 img-fluid" style="width:100%;height:100%;"/>
+			</div>
+		</section>
+		
+		<section>
+			<div id="recipe" class="container">
+				<div class="row">
+					<div id="recipe-img" class="col-md-6">
+						<img src="images/recipe7.jpg" class="d-block w-100 img-fluid redirect" style="height:100%"/>
+					</div>
+					<div id="recipe-para" class="col-md-6">
+						<h3 class="about-r">Steak and Chips</h3>
+						<p class="recipe-p">
+							A steak, also sometimes called "beef steak", is a meat generally sliced across the muscle fibers, potentially including a bone. It is normally grilled, though it can also be pan-fried. Steak can also be cooked in sauce, such as in steak and kidney pie, or minced and formed into patties, such as hamburgers.
+
+							Besides cattle, steaks are also often cut from other animals, including bison, camel, goat, horse, kangaroo, sheep, ostrich, pigs, reindeer, turkey, deer, and zebu, as well as various types of fish, especially salmon and large fish such as swordfish, shark, and marlin. For some meats, such as pork, lamb and mutton, chevon, and veal, these cuts are often referred to as chops. Some cured meat, such as gammon, is commonly served as steak.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="page-footer" itemprop="footer">
+			<div id="contact" class="container">
+				<div id="footer-row" class="row">
+					<div class="col-md-4 con-l">
+						<div class="box-wrap" itemprop="contact">
+							<div class="logo-wrap" itemprop="logo">
+								<img src="images/logo9.png" class="d-block mh-45 mw-80 center" alt="Logo" style="width:50%;height:50%;"/>
+							</div>
+							<div class="foot-para">
+								<p class="contact-text">
+								MY FOOD AND SONS is subject to copyright to My Foods and Sons Pvt Ltd. Established in 2001, MY FOODS AND SONS  
+								has won major accolades throughout the culinary world.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 con-m">
+						<h3 class="contact-h">QUICK LINKS</h3>
+						<ul>
+							<li>
+								<a id="footer-link" href="index.html">Home</a>
+							</li>
+							<li>
+								<a id="footer-link" href="index.html#about">About Us</a>
+							</li>
+							<li>
+								<a id="footer-link" href="policy.html">Privacy Policy</a>
+							</li>
+							<li>
+								<a id="footer-link" href="tnc.html">Terms and Conditions</a>
+							</li>
+							<li>
+								<a id="footer-link" href="contact.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 con-r">
+						<h3 class="contact-h">GET IN TOUCH</h3>
+						<div class="icon-box">
+							<a class="icon-link" href="mailto:suport@myfoodandsons.com"><i class="fa fa-mail-bulk"></i></a>
+						</div>
+						<a id="contact-p" href="mailto:suport@myfoodandsons.com">suport@myfoodandsons.com</a>
+					</div>
+				</div>
+			</div>
+			<a id="btn-back-to-top" href="#home" class="btn btn-outline-dark btn-floating btn-lg m-1 top-btn" role="button" style="display: none">
+				<i class="fas fa-arrow-up"></i>
+			</a>
+		</footer>
+	</body>
+</html>

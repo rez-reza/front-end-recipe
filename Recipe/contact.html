@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Landing Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="My Food and Sons.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="recipe.js"></script>
+	</head>
+	
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+					<div class="navbar-header">
+						<a id="logo" class="navbar-brand ms-auto" href="index.html">
+							<img src="images/logo8.2.png" alt="Logo" class="img-fluid"/>
+						</a>
+						<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse justify-content-end" id="menu">
+						<ul class="navbar-nav mb-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">
+									<strong>Home</strong>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#about"><strong>About</strong></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#arrival-sec"><Strong>Recipes</strong></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<strong>Policy</strong>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="policy.html"><strong>Privacy Policy</strong></a></li>
+									<li><a class="dropdown-item" href="tnc.html"><strong>Terms and Conditions</strong></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#home"><strong>Contact</strong></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<div id="home">
+			<img src="images/contactBanner.png" class="d-block w-100 img-fluid" style="width:100%;height:100%;"/>
+		</div>
+		
+		<section>
+			<div id="contact-sec">
+				<div id="contact" class="container">
+					<div class="row">
+						<div id="contact-img" class="col-md-6">
+							<img src="images/contactImg.png" class="d-block w-100 img-fluid redirect" style="height:100%;weight:100%;"/>
+						</div>
+						
+						<div id="contact-form" class="col-md-6">
+							<form>
+								<div class="mb-3">
+									<label for="inputName" class="form-label">Name:</label>
+									<input type="name" class="form-control" id="inputName" placeholder="Enter name ...">
+								</div>
+								<div class="mb-3">
+									<label for="inputEmail" class="form-label">Email address:</label>
+									<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email ...">
+									<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+								</div>
+								<div class="mb-3">
+									<label for="inputComm" class="form-label">Comments:</label>
+									<textarea type="comments" class="form-control" rows="6" name="text" id="inputComm" placeholder="Enter comments ..."></textarea>
+								</div>
+								<div class="mb-3 form-check">
+									<input type="checkbox" class="form-check-input" id="pp-chk">
+									<label class="form-check-label" for="exampleCheck1">I have read and I agree with the Privacy Policy.</label>
+								</div>
+								<div class="mb-3 form-check">
+									<input type="checkbox" class="form-check-input" id="tnc-chk">
+									<label class="form-check-label" for="exampleCheck1">I have read and I agree with the Terms and Conditions.</label>
+								</div>
+								<div class="mb-3 form-check">
+									<input type="checkbox" class="form-check-input" id="promo-chk">
+									<label class="form-check-label" for="exampleCheck1">I would like to receive regular updates and latest news about promos and deals.</label>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="page-footer" itemprop="footer">
+			<div id="contact" class="container">
+				<div id="footer-row" class="row">
+					<div class="col-md-4 con-l">
+						<div class="box-wrap" itemprop="contact">
+							<div class="logo-wrap" itemprop="logo">
+								<img src="images/logo9.png" class="d-block mh-45 mw-80 center" alt="Logo" style="width:50%;height:50%;"/>
+							</div>
+							<div class="foot-para">
+								<p class="contact-text">
+								MY FOOD AND SONS is subject to copyright to My Foods and Sons Pvt Ltd. Established in 2001, MY FOODS AND SONS  
+								has won major accolades throughout the culinary world.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 con-m">
+						<h3 class="contact-h">QUICK LINKS</h3>
+						<ul>
+							<li>
+								<a id="footer-link" href="index.html">Home</a>
+							</li>
+							<li>
+								<a id="footer-link" href="index.html#about">About Us</a>
+							</li>
+							<li>
+								<a id="footer-link" href="policy.html">Privacy Policy</a>
+							</li>
+							<li>
+								<a id="footer-link" href="tnc.html">Terms and Conditions</a>
+							</li>
+							<li>
+								<a id="footer-link" href="#">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 con-r">
+						<h3 class="contact-h">GET IN TOUCH</h3>
+						<div class="icon-box">
+							<a class="icon-link" href="mailto:suport@myfoodandsons.com"><i class="fa fa-mail-bulk"></i></a>
+						</div>
+						<a id="contact-p" href="mailto:suport@myfoodandsons.com">suport@myfoodandsons.com</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

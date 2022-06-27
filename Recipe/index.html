@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Landing Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="My Food and Sons.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="recipe.js"></script>
+	</head>
+	
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<div class="container">
+					<div class="navbar-header">
+						<a id="logo" class="navbar-brand ms-auto" href="#home">
+							<img src="images/logo8.2.png" alt="Logo" class="img-fluid"/>
+						</a>
+						<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse justify-content-end" id="menu">
+						<ul class="navbar-nav mb-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#home">
+									<strong>Home</strong>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about"><strong>About</strong></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#arrival-sec"><Strong>Recipes</strong></a>
+							</li>
+							<li class="nav-item dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+									<strong>Policy</strong>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="policy.html"><strong>Privacy Policy</strong></a></li>
+									<li><a class="dropdown-item" href="tnc.html"><strong>Terms and Conditions</strong></a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html"><strong>Contact</strong></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		<section>
+			<div id="home" class="carousel slide carousel-fade" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li id="indicators" type="button" data-target="#home" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
+					<li id="indicators" data-target="#home" data-slide-to="1" aria-current="true" aria-label="Slide 2"></li>
+					<li id="indicators" data-target="#home" data-slide-to="2" aria-current="true" aria-label="Slide 3"></li>
+				</ol>
+				
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img id="img1" src="images/banner1.png" class="d-block w-100" alt="image1" style="width:100%;height:100%;"/>
+						<div class="carousel-caption">
+							<h1 class="banner-text">My Food and Sons</h1>
+							<h3 class="banner-text-sm">Your Own <strong class="lead">Home Food</strong> Recipe Website</h3>
+							<div class="banner-btn">
+								<a class="banner-btn" href="#arrival-sec">Discover Now</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="carousel-item">
+						<img id="img2" src="images/banner2.png" class="d-block w-100" alt="image2" style="width:100%;height:100%;"/>
+						<div class="carousel-caption">
+							<h1 class="banner-text">My Food and Sons</h1>
+							<h3 class="banner-text-sm">Your Own <strong class="lead">Home Food</strong> Recipe Website</h3>
+							<div class="banner-btn">
+								<a class="banner-btn" href="#about">Discover Now</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="carousel-item">
+						<img id="img3" src="images/banner3.png" class="d-block w-100" alt="image3" style="width:100%;height:100%;"/>
+						<div class="carousel-caption">
+							<h1 class="banner-text">My Food and Sons</h1>
+							<h3 class="banner-text-sm">Your Own <strong class="lead">Home Food</strong> Recipe Website</h3>
+							<div class="banner-btn">
+								<a class="banner-btn" href="#arrival-sec">Discover Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<button id="carousel-btn" class="carousel-control-prev" type="button" data-target="#home" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				
+				<button id="carousel-btn" class="carousel-control-next" type="button" data-target="#home" data-slide="next">
+					<span class="visually-hidden">Next</span>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+			</div>
+		</section>
+		
+		<section>
+			<div id="about-sec">
+				<div id="about" class="container">
+					<div class="row">
+						<div id="about-img" class="col">
+							<img src="images/about2.jpg" class="img-fluid" alt="about-img" style="width:100%;height:100%;"/>
+						</div>
+						
+						<div class="col">
+							<h3 class="about-h">About Us</h3>
+							<p id="about-p">
+							When <strong>“MY FOOD AND SONS”</strong> re-propelled, we felt like nourishment media had turned out to be a lot of an 
+							exclusionary experience. It was constantly about watching other individuals — <strong>progressively capable individuals, 
+							honestly</strong> — make nourishment behind a counter. There was nothing about it that was welcoming … like a cool gourmet 
+							specialist gathering going on that standard individuals weren’t welcomed to.
+							</p>
+							<p id="about-p">
+							<strong>We needed to make a space that was for everybody —</strong> individuals who jumped at the chance to eat more than they really 
+							preferred to cook. We made a spot that was as much about delectable, simple plans as it was about nourishment as a 
+							fun way of life and social marvel. We produce almost 200 plans every month, but at the same time we’re making recordings 
+							about our preferred brands, cafés, and stores, or famous people and their dietary patterns. In addition, we’re tied in 
+							with recounting to the insane sustenance stories you won’t discover anyplace else.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<div id="arrival-sec">
+				<div id="arrival-con" class="container">
+					<div class="row" id="recipe-h">
+						<h3 class="recipe-h">Fresh Arrivals</h3>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe5.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="burger.html"><p class="card-text">Cheese Burger and Fries</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe6.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="spaghetti.html"><p class="card-text">Spaghetti and Cheese</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe7.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="steak.html"><p class="card-text">Steak and Chips</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe8.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="pudding.html"><p class="card-text">Strawberry Pudding</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe8.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="pudding.html"><p class="card-text">Strawberry Pudding</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe7.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="steak.html"><p class="card-text">Steak and Chips</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe6.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="spaghetti.html"><p class="card-text">Spaghetti and Cheese</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe5.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="burger.html"><p class="card-text">Cheese Burger and Fries</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section>
+			<div id="arrival-hit">
+				<div class="container">
+					<div class="row" id="recipe-h">
+						<h3 class="recipe-h">Hit Recipe</h3>
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe5.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="burger.html"><p class="card-text">Cheese Burger and Fries</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe6.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="spaghetti.html"><p class="card-text">Spaghetti and Cheese</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe7.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="steak.html"><p class="card-text">Steak and Chips</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe8.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="pudding.html"><p class="card-text">Strawberry Pudding</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe8.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="pudding.html"><p class="card-text">Strawberry Pudding</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe7.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="steak.html"><p class="card-text">Steak and Chips</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe6.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="spaghetti.html"><p class="card-text">Spaghetti and Cheese</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3">
+							<div class="flip-card">
+								<div class="flip-card-inner">
+									<div class="flip-card-front">
+										<img src="images/recipe5.jpg" class="card-img-top d-block w-100" alt="recipe1" style="width:100%;height:100%;"/>
+									</div>
+									<div class="flip-card-back">
+										<a id="card-link" href="burger.html"><p class="card-text">Cheese Burger and Fries</p></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer class="page-footer" itemprop="footer">
+			<div id="contact" class="container">
+				<div id="footer-row" class="row">
+					<div class="col-md-4 con-l">
+						<div class="box-wrap" itemprop="contact">
+							<div class="logo-wrap" itemprop="logo">
+								<img src="images/logo9.png" class="d-block mh-45 mw-80 center" alt="Logo" style="width:50%;height:50%;"/>
+							</div>
+							<div class="foot-para">
+								<p class="contact-text">
+								MY FOOD AND SONS is subject to copyright to My Foods and Sons Pvt Ltd. Established in 2001, MY FOODS AND SONS  
+								has won major accolades throughout the culinary world.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 con-m">
+						<h3 class="contact-h">QUICK LINKS</h3>
+						<ul>
+							<li>
+								<a id="footer-link" href="#home">Home</a>
+							</li>
+							<li>
+								<a id="footer-link" href="#about">About Us</a>
+							</li>
+							<li>
+								<a id="footer-link" href="policy.html">Privacy Policy</a>
+							</li>
+							<li>
+								<a id="footer-link" href="tnc.html">Terms and Conditions</a>
+							</li>
+							<li>
+								<a id="footer-link" href="contact.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4 con-r">
+						<h3 class="contact-h">GET IN TOUCH</h3>
+						<div class="icon-box">
+							<a class="icon-link" href="mailto:suport@myfoodandsons.com"><i class="fa fa-mail-bulk"></i></a>
+						</div>
+						<a id="contact-p" href="mailto:suport@myfoodandsons.com">suport@myfoodandsons.com</a>
+					</div>
+				</div>
+			</div>
+			<a id="btn-back-to-top" href="#home" class="btn btn-outline-dark btn-floating btn-lg m-1 top-btn" role="button" style="display: none">
+				<i class="fas fa-arrow-up"></i>
+			</a>
+		</footer>
+	</body>
+</html>
